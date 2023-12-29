@@ -1,0 +1,7 @@
+// json-server --watch db.json
+// npm install -g json-server
+// npm i cors
+// npm i express
+// npm i react-router-dom
+// npm i cors
+// npm i axios
