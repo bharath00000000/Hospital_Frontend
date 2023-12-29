@@ -24,7 +24,7 @@ function Doctorr() {
   };
   
   useEffect(() => {
-    axios.get('http://localhost:5000/Doctorr')
+    axios.get('http://localhost:5000/doctors')
       .then((response) => {
         setDoctors(response.data);
       })
