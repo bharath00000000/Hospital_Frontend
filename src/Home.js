@@ -8,7 +8,7 @@ function Home() {
   const [doctorNotFound, setDoctorNotFound] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/doctors')
+    axios.get('http://3.110.158.87:5000/doctors')
       .then((response) => {
         setDoctors(response.data);
       })
@@ -16,7 +16,7 @@ function Home() {
         console.error('Error fetching doctor data:', error);
       });
 
-    axios.get('http://localhost:5000/patients')
+    axios.get('http://3.110.158.87:5000/patients')
       .then((response) => {
         setFilteredPatients(response.data);
       })
